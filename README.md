@@ -146,7 +146,10 @@ A related option is VS Code Dev Containers, which will open the project in your 
 
     To create the remote github repo:
     ```
-    gh repo create azure-search-openai-demo --template Azure-samples/azure-search-openai-demo --public
+    gh repo create azure-search-openai-demo --public
+    git init
+    git remote add azure-search-openai-demo https://github.com/<owner>/azure-search-openai-demo
+    git push --set-upstream azure-search-openai-demo <main branch name>
     ```
 
 
